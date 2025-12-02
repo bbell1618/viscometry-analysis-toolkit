@@ -39,7 +39,8 @@ viscometry-analysis-toolkit/
       analysis.py    # basic metrics and cluster indicator
   tests/
     test_analysis.py # simple tests on synthetic data
-Tech stack
+```
+## Tech stack
 
 Python 3.10+
 
@@ -53,7 +54,7 @@ pytest (for lightweight tests)
 
 Jupyter (for notebooks)
 
-Getting started
+## Getting started
 1. Clone the repo
 git clone https://github.com/bbell1618/viscometry-analysis-toolkit.git
 cd viscometry-analysis-toolkit
@@ -77,7 +78,7 @@ Open the notebooks in the notebooks/ folder:
 
 02_cluster_length_scale_demo.ipynb
 
-Usage overview
+## Usage overview
 
 Typical workflow:
 
@@ -93,6 +94,6 @@ simple cluster metrics.
 
 Explore and tweak analysis logic in the notebooks.
 
-Disclaimer
+## Disclaimer
 
 This repository is a toy example meant to demonstrate analysis patterns and code structure for shear-rate-dependent viscosity data. The cluster metrics implemented here are simplified and should not be interpreted as production-grade PPI/cluster analysis tools.
