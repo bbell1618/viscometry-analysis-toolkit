@@ -1,20 +1,41 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Viscometry Analysis Toolkit
 
-# Run and deploy your AI Studio app
+Small Python toolkit and set of Jupyter notebooks for exploring **shear-rate-dependent viscosity** data using synthetic datasets.  
+The goal is to demonstrate how you might analyze flow curves, compute basic metrics, and experiment with simple “cluster length-scale” indicators inspired by protein–protein interaction / cluster formation work in biotherapeutic formulations.
 
-This contains everything you need to run your app locally.
+> **Note:** All data in this repo is synthetic and is provided for demonstration and educational purposes only.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1zSaKqjFFiHKBZaRMbhCh0k-mKIN2pjjb
+---
 
-## Run Locally
+## Features
 
-**Prerequisites:**  Node.js
+- Load and clean viscosity vs shear-rate data from CSV.
+- Plot flow curves and log–log representations (viscosity vs shear rate).
+- Compute basic metrics such as:
+  - apparent viscosity at user-selected shear rates,
+  - a toy “cluster length-scale” indicator based on slope/curvature of log(viscosity) vs log(shear-rate).
+- Example Jupyter notebooks that walk through:
+  - basic data exploration,
+  - computing and visualizing the toy cluster metric.
 
+---
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Repository structure
+
+```text
+viscometry-analysis-toolkit/
+  README.md
+  requirements.txt
+  data/
+    example_viscosity_data.csv
+  notebooks/
+    01_explore_shear_rate_vs_viscosity.ipynb
+    02_cluster_length_scale_demo.ipynb
+  src/
+    visco_tools/
+      __init__.py
+      io.py          # load/save CSV data
+      plotting.py    # common plotting helpers
+      analysis.py    # basic metrics and cluster indicator
+  tests/
+    test_analysis.py # simple tests on synthetic data
