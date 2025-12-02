@@ -1,0 +1,5 @@
+{
+  "name": "Viscometry Analysis Toolkit",
+  "description": "A scientific web dashboard for analyzing shear-rate dependent viscosity data, identifying protein clustering, and generating AI-driven rheological reports.",
+  "requestFramePermissions": []
+}
